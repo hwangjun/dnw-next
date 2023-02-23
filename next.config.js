@@ -3,6 +3,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  distDir:'build',
+  reactStrictMode: true,
+  webpackDevMiddleware: config => {
+    config.watchOptions = {
+      poll:true
+    }
+  }
 }
 
-module.exports = nextConfig
+export default nextConfig
