@@ -7,7 +7,7 @@ interface data {
 
 function About(data: data) {
   console.log(data);
-  return <div>About!!</div>;
+  return <div>About!!!</div>;
 }
 
 export default About;
